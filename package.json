@@ -1,0 +1,22 @@
+{
+  "name": "search-api",
+  "version": "1.0.0",
+  "description": "Make sure to install docker first https://www.docker.com/products/docker-desktop. After you installed docker run these commands",
+  "main": "index.js",
+  "scripts": {
+    "api": "docker-compose up -d && docker exec backend /bin/sh start.sh",
+    "client": "npm run --prefix react-search start",
+    "start": "npm run api && npm run client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmuday/search-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmuday/search-api/issues"
+  },
+  "homepage": "https://github.com/bmuday/search-api#readme"
+}
